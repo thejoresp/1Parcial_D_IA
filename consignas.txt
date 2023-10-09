@@ -1,0 +1,34 @@
+Datos a utilizar:
+Se dispone de un archivo en formato csv que contiene la información de la cantidad de pasajeros que viajaron en 
+las lineas D, E y H de Subterraneos de la Ciudad de Bs As durante el periodo 12 al 18 de febrero 2023. 
+Cada registro abarca un lapso de 15 minutos indicando cuantos pasajeros pasaron por el molinete en ese lapso
+Las columnas del archivo (subte20230212a20230218.csv) indican:
+
+- FECHA: fecha de registro
+- DESDE: horario de inicio del registro
+- HASTA: horario de finalización del registro
+- LINEA: linea de subte
+- MOLINETE: identificacion del molinete
+- ESTACION: estación de subte
+- pax_pagos: cantidad de pasajeros que pagaron
+- pax_pases_pagos: cantidad de pasajeros que pagaron con pase
+- pax_franq: cantidad de pasajeros que pagaron con franquicias
+- pax_TOTAL: cantidad total de pasajeros que usaron el molinete
+
+NOTA: Para descargar el archivo de datos utilice el siguiente link
+https://drive.google.com/file/d/1AxyhhQs7fM8cKD500k6YRFRUcqQYroIK/view?usp=sharing
+
+A continuación se muestra una porción del archivo a utilizar:
+
+
+Desarrollo a realizar:
+Sobre los datos del Subte presentado anteriormente se necesita realizar algunas estadísticas que se detallan a continuación:
+
+1. Calcular la cantidad total de pasajeros que pagaron (pax_pagos) por línea. El programa debe mostrar una leyenda similar a la siguiente:
+2. Calcular cuantos pasajeros pagaron con pase el día 14/8
+3. Obtener la fecha y la línea que tuvo mayor cantidad de pasajeros en un período de 15 minutos (máximo pax_TOTAL)
+
+Para realizar lo anterior se deberán importar los datos en una matriz numpy, aplicar limpieza y transformaciones que sean necesarias
+para obtener una matriz numérica.
+Las columnas que no son requeridas para realizar los cálculos solicitados pueden ser ignoradas en la construcción de la matriz 
+(por ejemplo la columna que contiene el nombre de la estación)
